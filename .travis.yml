@@ -11,7 +11,7 @@ install:
 
 before_script:
     - "pylint --errors-only *.py"
-    - "pytest --verbose src/text_calculator.py"
+    - "pytest --verbose test_calculator.py"
     - "docker-compose up -d"
     - "docker container ls"
 
